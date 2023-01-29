@@ -16,15 +16,16 @@ namespace OHCE.Test.xUnit
             Assert.Equal("oloy", sortie);
         }
 
-        [Fact]
-        public void palyndromeTest()
+        [Theory]
+        [InlineData(Expressions.Français.BienDit)]
+        public void palyndromeTest(string bienDitAttendu)
         {
             Ohce ohce = new Ohce();
 
             var sortie = ohce.palyndrome("kayak");
             string palyndrome = "kayak";
 
-            Assert.Contains(palyndrome + " Bien dit !", sortie);
+            Assert.Contains(palyndrome + bienDitAttendu, sortie);
         }
 
     }

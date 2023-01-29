@@ -19,7 +19,7 @@ namespace OHCE_B3
 
             if (str == reversed)
             {
-                stringBuilder.Append(" Bien dit !");
+                stringBuilder.Append("Bien dit");
             }
 
             return stringBuilder.ToString();
