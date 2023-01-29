@@ -8,10 +8,13 @@ namespace OHCE_B3.Langues
 {
     public class Francais : ILangue
     {
-        public string BienDit => "Bien Dit !";
+        public string BienDit => "Bien Dit";
 
-        public string Bonjour => "Bonjour";
+        public string direBonjour(PeriodeJournee periodeJournee)
+        {
+            return periodeJournee == PeriodeJournee.Matin ? Expressions.Français.Bonjour : Expressions.Français.Bonsoir;
 
+        }
         public string AuRevoir => "Au revoir";
     }
 }
