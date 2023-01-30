@@ -1,9 +1,9 @@
 ﻿using OHCE_B3;
 using System.Text;
 
-var ohce = new Ohce(new SystemLangProxy(), new SystemTimePeriodeJourneeAdapter().PériodeJournée);
+var ohce = new Ohce(new SystemLangProxy(), new SystemTimePeriodeJourneeAdapter().PeriodeJournee);
 
-Console.WriteLine(new SystemTimePeriodeJourneeAdapter().PériodeJournée);
+Console.WriteLine(new SystemTimePeriodeJourneeAdapter().PeriodeJournee);
 
 Console.WriteLine(ohce.Saluer());
 
